@@ -75,9 +75,9 @@
 
 ## counter.js
 
-data-val = the final value
-increase-val = the increase value
-interval = Smaller the number, slower the counter.
+<p>data-val = the final value</p>
+<p>increase-val = the increase value</p>
+<p>interval = Smaller the number, slower the counter.</p>
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
