@@ -1,0 +1,91 @@
+/* Contador */
+
+.c-wrapper {
+	display: flex;
+	position: absolute;
+	width: 50vw;
+	transform: translate(-50%, -50%);
+	top: 43%;
+	left: 50%;
+	justify-content: space-around;
+	gap: 10px;
+	padding-bottom: 10rem;
+	padding-top: 0;
+}
+
+.c-container {
+	width: 28vmin;
+	height: 24vmin;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 1em 0;
+	position: relative;
+	font-size: 16px;
+	border-radius: 0.5em;
+	background-color: #21242b;
+	transition: all 0.5s ease;
+	/* background-color: #21242b; */
+	/* background-color: #006365; */
+	/* border-bottom: 10px solid #18f98f; */
+}
+
+.c-container:hover {
+	scale: 1.2;
+	border: #01ced1 solid 2px;
+	box-shadow: #171717 0 0 10px;
+}
+i {
+	color: #18f98f;
+	font-size: 2.5em;
+	text-align: center;
+}
+span.c-num {
+	color: #01ced1;
+	display: grid;
+	place-items: center;
+	font-weight: 600;
+	font-size: 4em;
+}
+span.c-text {
+	color: #e0e0e0;
+	font-size: 2em;
+	text-align: center;
+	pad: 0.7em 0;
+	font-weight: 400;
+	line-height: 1.3rem;
+	margin: 0 1rem 2rem 1rem;
+	font-family: "Roboto", sans-serif;
+}
+@media screen and (max-width: 1024px) {
+	.c-wrapper {
+		width: 85vw;
+	}
+	.c-container {
+		height: 26vmin;
+		width: 26vmin;
+		font-size: 12px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.c-wrapper {
+		width: 90vw;
+		flex-wrap: wrap;
+		gap: 30px;
+	}
+	.c-container {
+		width: calc(50% - 40px);
+		height: 30vmin;
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 480px) {
+	.c-wrapper {
+		gap: 15px;
+	}
+	.c-container {
+		width: 100%;
+		height: 25vmin;
+		font-size: 8px;
+	}
+}
